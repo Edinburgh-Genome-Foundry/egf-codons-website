@@ -76,9 +76,7 @@ div
           title="DNA Features Viewer",
           subtitle="Display DNA features from Genbank etc.",
           source='https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer',
-          docs='https://edinburgh-genome-foundry.github.io/DnaFeaturesViewer',
-          demo='https://github.com/Edinburgh-Genome-Foundry/Flametree',
-          paper='https://github.com/Edinburgh-Genome-Foundry/Flametree')
+          docs='https://edinburgh-genome-foundry.github.io/DnaFeaturesViewer')
     div(slot='summary').
       Customizable library to produce plots of sequence annotations (e.g. from
       Genbank). Easily customizable to highlight or hide certain features, it
@@ -87,10 +85,9 @@ div
   project(img='/static/imgs/logos/visual-sbol-css.png',
           title="Visual SBOL CSS",
           subtitle="The super-easy way to plot SBOL constructs in webpages",
-          source='https://github.com/Edinburgh-Genome-Foundry/Flametree',
-          docs='https://github.com/Edinburgh-Genome-Foundry/Flametree',
-          demo='https://github.com/Edinburgh-Genome-Foundry/Flametree',
-          paper='https://github.com/Edinburgh-Genome-Foundry/Flametree')
+          source='https://github.com/Edinburgh-Genome-Foundry/SBOL-Visual-CSS',
+          docs='https://edinburgh-genome-foundry.github.io/SBOL-Visual-CSS/',
+          demo='https://edinburgh-genome-foundry.github.io/SBOL-Visual-CSS/examples/drag_and_drop_construct_editor.html')
     div(slot='summary').
       CSS library for displaying DNA constructs using the visual SBOL notation.
       Small and self-contained, it can be used in webpages, emails, HTML-based
