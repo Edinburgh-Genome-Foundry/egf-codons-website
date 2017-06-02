@@ -6,6 +6,7 @@ Vue.use(Router)
 import Portfolio from 'components/Portfolio'
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',

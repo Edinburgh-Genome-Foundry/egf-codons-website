@@ -13,7 +13,7 @@ export default {
 <style>
 
 body {
-    width: 700px;
+    width: 600px;
     max-width: 95%;
     margin: 0 auto;
 }

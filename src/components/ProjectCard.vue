@@ -1,12 +1,14 @@
 <template lang="pug">
 .project-div
   img.project-logo(:src='img')
+  h3.title(v-if='title') {{ title }}
+  h4.subtitle(v-if='title') {{ subtitle }}
   .links
-    a.demo(v-if='demo', :href='docs') Demo
+    a.demo(v-if='demo', :href='demo') Demo
     a.paper(v-if='paper', :href='docs') Paper
     a.docs(v-if='docs', :href='docs') Docs
     a.source(v-if='source', :href='source') Source
-  p
+  p.summary
     slot(name='summary')
 </template>
 
@@ -14,6 +16,8 @@
 export default {
   props: {
     img: null,
+    title: null,
+    subtitle: null,
     source: null,
     docs: null,
     demo: null,
@@ -25,7 +29,8 @@ export default {
 <style scoped>
 
 .project-div {
-  margin: 30px auto;
+  display:block;
+  margin: 30px auto 60px;
   width: 450px;
   max-width: 90%;
 }
@@ -34,7 +39,7 @@ img.project-logo {
     display: block;
     margin: 0 auto;
     max-width: 90%;
-    max-height: 70px;
+    max-height: 100px;
 }
 .links {
   max-width: 90%;
@@ -52,6 +57,19 @@ img.project-logo {
     margin-left: 20px;
 }
 
+h3.title {
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+h4.subtitle {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.summary {
+  text-align: justify;
+}
 a.demo {
     background: url('/static/imgs/icons/demo.svg') no-repeat left;
 }
