@@ -4,10 +4,12 @@
   h3.title(v-if='title') {{ title }}
   h4.subtitle(v-if='title') {{ subtitle }}
   .links
+    a.website(v-if='website', :href='website') Website
     a.demo(v-if='demo', :href='demo') Demo
     a.paper(v-if='paper', :href='docs') Paper
     a.docs(v-if='docs', :href='docs') Docs
     a.source(v-if='source', :href='source') Source
+
   p.summary
     slot(name='summary')
 </template>
@@ -21,7 +23,8 @@ export default {
     source: null,
     docs: null,
     demo: null,
-    paper: null
+    paper: null,
+    website: null
   }
 }
 </script>
@@ -81,6 +84,10 @@ a.docs {
 }
 a.source {
     background: url(/static/imgs/icons/source.svg) no-repeat left;
+}
+
+a.website {
+    background: url(/static/imgs/icons/demo.svg) no-repeat left;
 }
 
 </style>
