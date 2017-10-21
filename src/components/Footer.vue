@@ -12,7 +12,7 @@ footer {
   margin-top: 4em;
   padding-bottom: 1em;
   color: #999999;
-  background-color: #fbfbfb;
+  /*background-color: #fbfbfb;*/
   text-align: center;
 }
 

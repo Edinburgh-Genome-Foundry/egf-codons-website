@@ -59,6 +59,13 @@ img.project-logo {
     padding-left: 20px;
     margin-left: 20px;
 }
+.links a:first-child {
+  margin-left: 0;
+}
+
+.links a:hover {
+  color: #555;
+}
 
 h3.title {
   font-size: 28px;
