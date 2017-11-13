@@ -2,14 +2,10 @@
 div
   img.title-logo(src='/static/imgs/logos/egf-codon.svg')
   h1 The Software Suite of the <br /> Edinburgh Genome Foundry
-
-  .header-links
-    a(href='#design') Design
-    a(href='#build') Build
-    a(href='#other') Other
-    a(href='#collaborations') Collaborations
-
-
+  weblinks(emailSubject='[EGF-Codons] Feedback on the EGF software'
+           tweetMessage='EGF Codons: free software for DNA design, assembly, and more.',
+           tweetUrl='https://edinburgh-genome-foundry.github.io/',
+           tweetHashtags='synbio, software')
 
   p.
     The <a target='_blank' href='http://genomefoundry.org/'>Genome Foundry</a>
@@ -20,7 +16,12 @@ div
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
 
-
+  .header-links
+    h3 Categories
+    a(href='#design') Design
+    a(href='#build') Build
+    a(href='#other') Other
+    a(href='#collaborations') Collaborations
 
 
   .category(id='design') Design <hr>
@@ -99,19 +100,6 @@ div
 
   .category(id='build', name='manufacturing') Build <hr>
 
-
-
-
-  project(title="EGF CUBA",
-          subtitle="Web Collection of Useful Bio Apps",
-          img='/static/imgs/logos/cuba.png',
-          source='https://github.com/Edinburgh-Genome-Foundry/CUBA',
-          website='http://cuba.genomefoundry.org')
-    div(slot='summary').
-      Collection of publicly available one-page applications for DNA assembly
-      and synthetic biology: restriction digest design, cloning simulation,
-      sequence optimization, and more.
-
   project(title="DNA CAULDRON",
           subtitle="A cloning simulator for synthetic biology",
           img='/static/imgs/logos/dnacauldron.png',
@@ -157,6 +145,15 @@ div
       information (including experimental data) from many file formats, write
       reports, generate and simulate picklists.
 
+  project(img='/static/imgs/logos/primavera.png',
+          title="Primavera",
+          subtitle="Primer-based verification assistant")
+    div(slot='summary').
+      Python library for primer selection and data analysis for assembly
+      verification. Primavera can suggest an optimal set of primers to]
+      sequence-verify a multi-part construct at all junctions. It can
+      also consolidate a batch of sequencing reads into a per-construct report.
+
   project(img='/static/imgs/logos/geneblocks.png',
           title="GENEBLOCKS",
           subtitle="Find common segments between DNA sequences"
@@ -166,15 +163,6 @@ div
       Python library for locating which segments are common to a set of sequences.
       Used in various project to optimize BLAST, cloning strategies, or simply
       for making sense of unannotated sequences.
-
-  project(img='/static/imgs/logos/taskpacker.png',
-          title="TASKPACKER",
-          subtitle="A generic scheduler for Python"
-          source='https://github.com/Edinburgh-Genome-Foundry/TaskPacker',
-          docs='https://edinburgh-genome-foundry.github.io/Taskpacker/')
-    div(slot='summary').
-      Python project to model tasks and processes and optimize the schedules of
-      repetitive processes in order to predict factory throughputs.
 
   project(img='/static/imgs/logos/bandwagon.png',
           title="BANDWAGON",
@@ -186,6 +174,17 @@ div
       Python library to simulate DNA digestion by restriction enzymes and plot
       digestion patterns. Useful for prediciting experimental results or for
       displaying results from digital fragment analyzers.
+
+
+  project(title="EGF CUBA",
+          subtitle="Web Collection of Useful Bio Apps",
+          img='/static/imgs/logos/cuba.png',
+          source='https://github.com/Edinburgh-Genome-Foundry/CUBA',
+          website='http://cuba.genomefoundry.org')
+    div(slot='summary').
+      Collection of publicly available one-page applications for DNA assembly
+      and synthetic biology: restriction digest design, cloning simulation,
+      sequence optimization, and more.
 
   project(img='/static/imgs/logos/smart_ass.png',
           title="Smart Assembly",
@@ -205,7 +204,29 @@ div
       applications, and the Foundry's robots, in a traceable and secure way.
       This project is not currently public (ask us about it !).
 
-  .category(id='other') Miscellaneous <hr>
+  project(img='/static/imgs/logos/taskpacker.png',
+          title="TASKPACKER",
+          subtitle="A generic scheduler for Python"
+          source='https://github.com/Edinburgh-Genome-Foundry/TaskPacker',
+          docs='https://edinburgh-genome-foundry.github.io/Taskpacker/')
+    div(slot='summary').
+      Python project to model tasks and processes and optimize the schedules of
+      repetitive processes in order to predict factory throughputs.
+
+
+
+  .category(id='other') Other Software <hr>
+
+  project(img='/static/imgs/logos/screepy.png',
+          title="Screepy",
+          subtitle="Screening out the creepy",
+          source='https://github.com/Edinburgh-Genome-Foundry/Bandwagon',
+          docs='https://edinburgh-genome-foundry.github.io/Bandwagon',
+          demo='http://cuba.genomefoundry.org/predict-digests')
+    div(slot='summary').
+      Screepy provides a framework to run multiple pathogenicity tests on DNA
+      sequences prior to synthesis, and compile the screen results in extensive
+      reports for traceability. The code is not public (but you can ask us about it !)
 
   project(img='/static/imgs/logos/proglog.png',
           title="Proglog",
@@ -247,8 +268,8 @@ div
      Python module to <i>print</i> living art pictures using pigmented yeast or
      bacteria. After an original project by Mike Shen (Boeke Lab).
 
-  project(title="Other repos",
-          subtitle="Miscellaneous Miscellani !")
+  project(title="Other Github repositories",
+          subtitle="...too small to have a logo")
 
     div.other-repos(slot='summary')
       :markdown-it
@@ -260,15 +281,14 @@ div
 
         [Scripts to download the iGEM database](https://github.com/Edinburgh-Genome-Foundry/igem-registry-downloader).
 
-        [This website's sources](https://github.com/Edinburgh-Genome-Foundry/Edinburgh-Genome-Foundry.github.io).
-
   .category(id='collaborations') Collaborations <hr>
 
   project(img='/static/imgs/logos/leaf_lims.png',
           title="LEAF LIMS",
           subtitle="A LIMS for Synthetic Biology",
           docs='https://leaflims.github.io/',
-          source='https://github.com/LeafLIMS/LeafLIMS')
+          source='https://github.com/LeafLIMS/LeafLIMS',
+          paper='http://pubs.acs.org/doi/abs/10.1021/acssynbio.7b00212')
     div(slot='summary').
       This Synbio-focused Laboratory information Management System was developed
       by GeneMill (Liverpool) in collaboration with the Earlham Institute and the
@@ -277,39 +297,38 @@ div
   project(img='/static/imgs/logos/genetic_constructor.png',
          title="Autodesk Genetic Constructor",
          subtitle="A web-based toolkit for synthetic biology",
-         website='https://geneticconstructor.lifesciences.autodesk.com/')
+         website='https://geneticconstructor.lifesciences.autodesk.com/',
+         paper='http://pubs.acs.org/doi/full/10.1021/acssynbio.7b00236')
     div(slot='summary').
       This sequence designer with modern features such as nested constructs,
-      templates, and the possibility to browseexternal part repositories, was started in 2015 as a
+      templates, and the possibility to browse external part repositories, was started in 2015 as a
       collaboration between Autodesk and the EGF. We provided initial input in
       specifications, software design, and a web API to order directly
       from the EGF via Genetic Constructor.
 
   myfooter
-
 </template>
 
 <script>
 import project from './ProjectCard'
 import myfooter from './Footer'
+import weblinks from './WebLinks'
 export default {
   name: 'hello',
   data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
   },
-  components: {project, myfooter}
+  components: {project, myfooter, weblinks}
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang='scss' scoped>
 .title-logo {
     width: 200px;
     margin-bottom: 30px;
 }
 .header-links {
+  margin-top: 2em;
   margin-bottom: 3em;
 }
 .header-links a {
@@ -338,7 +357,8 @@ h1, h2 {
 
 
 a {
-  color: #4287b9;
+  color: #4542be;
+
 }
 .other-repos p {
     text-align: center;

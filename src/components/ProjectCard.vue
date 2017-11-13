@@ -6,7 +6,7 @@
   .links
     a.website(v-if='website', :href='website') Website
     a.demo(v-if='demo', :href='demo') Demo
-    a.paper(v-if='paper', :href='docs') Paper
+    a.paper(v-if='paper', :href='paper') Paper
     a.docs(v-if='docs', :href='docs') Docs
     a.source(v-if='source', :href='source') Source
 
