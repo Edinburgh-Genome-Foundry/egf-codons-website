@@ -56,8 +56,7 @@ div
   project(img='/static/imgs/logos/dfv.png',
           title="DNA Features Viewer",
           subtitle="Display DNA features from Genbank etc.",
-          source='https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer',
-          docs='https://edinburgh-genome-foundry.github.io/DnaFeaturesViewer')
+          source='https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer')
     div(slot='summary').
       Customizable library to produce plots of sequence annotations (e.g. from
       Genbank). Easily customizable to highlight or hide certain features, it
@@ -77,7 +76,7 @@ div
 
   project(img='/static/imgs/logos/visual-sbol-css.png',
           title="Visual SBOL CSS",
-          subtitle="The super-easy way to plot SBOL constructs in webpages",
+          subtitle="Super-easy construct plotting for the web",
           source='https://github.com/Edinburgh-Genome-Foundry/SBOL-Visual-CSS',
           docs='https://edinburgh-genome-foundry.github.io/SBOL-Visual-CSS/',
           demo='https://edinburgh-genome-foundry.github.io/SBOL-Visual-CSS/examples/drag_and_drop_construct_editor.html')
@@ -127,7 +126,7 @@ div
           img='/static/imgs/logos/bandwitch.png',
           source='https://github.com/Edinburgh-Genome-Foundry/BandWitch',
           docs='https://edinburgh-genome-foundry.github.io/BandWitch/',
-          demo='http://cuba.genomefoundry.org/digestion_selector')
+          demo='http://cuba.genomefoundry.org/select_digestions')
     div(slot='summary').
       Python library to automatically select the best enzymes to either validate
       or identify a batch of genetic assemblies. Also provides report generation
@@ -147,7 +146,9 @@ div
 
   project(img='/static/imgs/logos/primavera.png',
           title="Primavera",
-          subtitle="Primer-based verification assistant")
+          subtitle="Primer-based verification assistant",
+          source='https://github.com/Edinburgh-Genome-Foundry/Primavera',
+          docs='https://edinburgh-genome-foundry.github.io/Primavera/')
     div(slot='summary').
       Python library for primer selection and data analysis for assembly
       verification. Primavera can suggest an optimal set of primers to]
@@ -168,8 +169,8 @@ div
           title="BANDWAGON",
           subtitle="Band patterns plotter and simulator",
           source='https://github.com/Edinburgh-Genome-Foundry/Bandwagon',
-          docs='https://edinburgh-genome-foundry.github.io/Bandwagon',
-          demo='http://cuba.genomefoundry.org/predict-digests')
+          docs='https://edinburgh-genome-foundry.github.io/BandWagon/',
+          demo='http://cuba.genomefoundry.org/predict-digestions')
     div(slot='summary').
       Python library to simulate DNA digestion by restriction enzymes and plot
       digestion patterns. Useful for prediciting experimental results or for
@@ -219,10 +220,7 @@ div
 
   project(img='/static/imgs/logos/screepy.png',
           title="Screepy",
-          subtitle="Screening out the creepy",
-          source='https://github.com/Edinburgh-Genome-Foundry/Bandwagon',
-          docs='https://edinburgh-genome-foundry.github.io/Bandwagon',
-          demo='http://cuba.genomefoundry.org/predict-digests')
+          subtitle="Screening out the creepy")
     div(slot='summary').
       Screepy provides a framework to run multiple pathogenicity tests on DNA
       sequences prior to synthesis, and compile the screen results in extensive
@@ -231,7 +229,6 @@ div
   project(img='/static/imgs/logos/proglog.png',
           title="Proglog",
           subtitle="A versatile progress logger for Python",
-          docs='http://edinburgh-genome-foundry.github.io/proglog/',
           source='https://github.com/Edinburgh-Genome-Foundry/proglog')
    div(slot='summary').
      Proglog is used as a unified progress logger in most computational
@@ -251,8 +248,7 @@ div
   project(img='/static/imgs/logos/cab.png',
           title="CAB",
           subtitle="A friendly boilerplate for computational apps",
-          docs='http://edinburgh-genome-foundry.github.io/proglog/',
-          source='https://github.com/Edinburgh-Genome-Foundry/proglog')
+          source='https://github.com/Edinburgh-Genome-Foundry/CAB')
    div(slot='summary').
      CAB provides an easy way to deploy websites where users can fill
      a form and get computational jobs done, and is used accross several EGF
