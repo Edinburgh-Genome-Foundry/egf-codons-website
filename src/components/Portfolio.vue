@@ -85,6 +85,14 @@ div
       Small and self-contained, it can be used in webpages, emails, HTML-based
       PDF reports, etc.
 
+  project(img='/static/imgs/logos/crazydoc.png',
+          title="CrazyDoc",
+          subtitle="Read sequences from Microsoft DOCX documents",
+          source='https://github.com/Edinburgh-Genome-Foundry/crazydoc')
+    div(slot='summary').
+      Python library to parse the most common sequence annotation format: the
+      colorful Microsoft Word document.
+
   project(img='/static/imgs/logos/emma_db.png',
           title="EMMA DB",
           subtitle="Web repository for the EMMA standard",
@@ -99,7 +107,7 @@ div
 
   .category(id='build', name='manufacturing') Build <hr>
 
-  project(title="DNA CAULDRON",
+  project(title="DNA Cauldron",
           subtitle="A cloning simulator for synthetic biology",
           img='/static/imgs/logos/dnacauldron.png',
           source='https://github.com/Edinburgh-Genome-Foundry/DnaCauldron',
@@ -134,7 +142,7 @@ div
       data
 
   project(img='/static/imgs/logos/plateo.png',
-          title="PLATEO",
+          title="Plateo",
           subtitle="Parsers and simulators for lab automation"
           source='https://github.com/Edinburgh-Genome-Foundry/Plateo',
           docs='https://edinburgh-genome-foundry.github.io/Plateo/')
@@ -156,7 +164,7 @@ div
       also consolidate a batch of sequencing reads into a per-construct report.
 
   project(img='/static/imgs/logos/geneblocks.png',
-          title="GENEBLOCKS",
+          title="Geneblocks",
           subtitle="Find common segments between DNA sequences"
           demo='http://cuba.genomefoundry.org/find-common-blocks'
           source='https://github.com/Edinburgh-Genome-Foundry/Geneblocks')
@@ -166,7 +174,7 @@ div
       for making sense of unannotated sequences.
 
   project(img='/static/imgs/logos/bandwagon.png',
-          title="BANDWAGON",
+          title="BandWagon",
           subtitle="Band patterns plotter and simulator",
           source='https://github.com/Edinburgh-Genome-Foundry/Bandwagon',
           docs='https://edinburgh-genome-foundry.github.io/BandWagon/',
@@ -206,7 +214,7 @@ div
       This project is not currently public (ask us about it !).
 
   project(img='/static/imgs/logos/taskpacker.png',
-          title="TASKPACKER",
+          title="TaskPacker",
           subtitle="A generic scheduler for Python"
           source='https://github.com/Edinburgh-Genome-Foundry/TaskPacker',
           docs='https://edinburgh-genome-foundry.github.io/Taskpacker/')
@@ -384,4 +392,5 @@ hr {
   height: 1px;
   width:600px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+
 </style>

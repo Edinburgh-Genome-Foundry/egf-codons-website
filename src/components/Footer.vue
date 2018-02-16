@@ -1,18 +1,23 @@
 <template lang='pug'>
 footer
   .container
-  | © Edinburgh Genome Foundry, 2017 <br/>
-  | The EGF is supported by the Research Councils UK and University of Edinburgh
+  p.center
+    img(src='/static/imgs/logos/egf-codon-horizontal.svg')
+    br
+    | © Edinburgh Genome Foundry, 2018 <br/>
+    | The EGF is supported by the Research Councils UK and University of Edinburgh
 </template>
 
 <style scoped>
 footer {
-  width: 100%;
+  width: 95%;
+  max-width: 400px;
+  margin: 2em auto;
   height: 40px;
-  margin-top: 4em;
+  margin-bottom: 1em;
   padding-bottom: 1em;
   color: #999999;
-  /*background-color: #fbfbfb;*/
+  filter: grayscale(100%);
   text-align: center;
 }
 
