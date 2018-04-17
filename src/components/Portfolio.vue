@@ -257,7 +257,7 @@ div
 
 
 
-  .category(id='other') Other Software <hr>
+  .category(id='other') Generic Software <hr>
 
   project(img='/static/imgs/logos/proglog.png',
           title="Proglog",
