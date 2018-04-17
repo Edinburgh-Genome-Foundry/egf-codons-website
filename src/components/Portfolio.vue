@@ -11,8 +11,8 @@ div
     The <a target='_blank' href='http://genomefoundry.org/'>Genome Foundry</a>
     is an academic facility running a highly automated robotic setup for DNA
     assembly automation. The software team develops computational libraries
-    and web applications for DNA Assembly, Lab Automation, and
-    Synthetic Biology. Most of our software is open-source and released
+    and web applications for DNA design and assembly, Lab Automation, and more.
+    Most of our software is open-source and released
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
 
@@ -20,7 +20,7 @@ div
     h3 Categories
     a(href='#design') Design
     a(href='#build') Build
-    a(href='#other') Other
+    a(href='#other') Generic software
     a(href='#collaborations') Collaborations
 
 
@@ -102,7 +102,32 @@ div
       JBEI's ICE) connected to a design tool specifically made for the EMMA
       assembly standard.
 
+  project(img='/static/imgs/logos/genedom.png',
+          title="Genedom",
+          source='https://github.com/Edinburgh-Genome-Foundry/genedom',
+          subtitle="Automated parts domestication")
+    div(slot='summary').
+      Genedom (in development) provides sequence optimizers for different
+      assembly standards, routines for batch domestication and PDF reports
+      for final verification and traceability.
 
+  project(img='/static/imgs/logos/screepy.png',
+          title="Screepy",
+          subtitle="Screening out the creepy")
+    div(slot='summary').
+      Screepy provides a framework to run multiple pathogenicity tests on DNA
+      sequences prior to synthesis, and compile the screen results in extensive
+      reports for traceability. The code is not public (but you can ask us about it !)
+
+  project(img='/static/imgs/logos/sequenticon.png',
+          title="Sequenticon",
+          source='https://github.com/Edinburgh-Genome-Foundry/sequenticon',
+          demo='http://cuba.genomefoundry.org/render_sequenticons'
+          subtitle="Visual identifiers for DNA sequences")
+    div(slot='summary').
+      Sequenticon provides #[a(href="https://en.wikipedia.org/wiki/Identicon") identicons]
+      for DNA sequences, to quickly check accross project reports whether two mentionned
+      genetic parts have exactly the same sequence.
 
 
   .category(id='build', name='manufacturing') Build <hr>
@@ -222,17 +247,17 @@ div
       Python project to model tasks and processes and optimize the schedules of
       repetitive processes in order to predict factory throughputs.
 
+  project(img='/static/imgs/logos/saboteurs.png',
+          title="Saboteurs",
+          subtitle="Indentify faulty genetic parts",
+          source='https://github.com/Edinburgh-Genome-Foundry/saboteurs')
+    div(slot='summary').
+      Simple library to identify genetic parts associated with assembly failure
+      (and therefore possibly corrupted) based on statistical evidence.
+
 
 
   .category(id='other') Other Software <hr>
-
-  project(img='/static/imgs/logos/screepy.png',
-          title="Screepy",
-          subtitle="Screening out the creepy")
-    div(slot='summary').
-      Screepy provides a framework to run multiple pathogenicity tests on DNA
-      sequences prior to synthesis, and compile the screen results in extensive
-      reports for traceability. The code is not public (but you can ask us about it !)
 
   project(img='/static/imgs/logos/proglog.png',
           title="Proglog",
@@ -262,6 +287,14 @@ div
      a form and get computational jobs done, and is used accross several EGF
      websites (CUBA, SmartAss. EMMA-DB). Built with VueJS on the frontend, Python/Django
      on the backend, and Docker for integration.
+
+  project(img='/static/imgs/logos/pdf_reports.png',
+           title="PDF Reports",
+           subtitle="Easy and clean PDF reports generation",
+           source='https://github.com/Edinburgh-Genome-Foundry/pdf_reports')
+    div(slot='summary').
+      Python module to generate PDF reports using Pug templates, an the
+      Semantic UI CSS framework.
 
   project(img='/static/imgs/logos/bioprinter.png',
           title="BioPrinter",
@@ -334,18 +367,21 @@ export default {
 .header-links {
   margin-top: 2em;
   margin-bottom: 3em;
-}
-.header-links a {
-  text-align: center;
-  color: grey;
-  text-decoration: none;
-  font-size: 1.1em;
-  padding-top: -2em;
-  margin-left: 4%;
-  margin-right: 4%
-}
-.header-links a:hover { color: black}
+  h3 {
+    margin-bottom: 2em
+  }
 
+  a {
+    text-align: center;
+    color: grey;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding-top: -2em;
+    margin-left: 4%;
+    margin-right: 4%;
+    &:hover { color: black}
+  }
+}
 
 p {
   text-align: left;
@@ -362,6 +398,8 @@ h1, h2 {
 
 a {
   color: #4542be;
+  text-decoration: none;
+  font-weight: 700;
 
 }
 .other-repos p {
@@ -369,6 +407,7 @@ a {
 }
 .other-repos p a {
   color: black;
+  font-weight: normal;
   text-decoration: none;
   padding-left: 1.2em;
     background: url('/static/imgs/icons/source.svg') no-repeat left;
