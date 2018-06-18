@@ -1,5 +1,6 @@
 <template lang='pug'>
 div
+  github-corners(repo="Edinburgh-Genome-Foundry" bg-color='#514ec5')
   img.title-logo(src='/static/imgs/logos/egf-codon.svg')
   h1 The Software Suite of the <br /> Edinburgh Genome Foundry
   weblinks(emailSubject='[EGF-Codons] Feedback on the EGF software'
@@ -310,11 +311,12 @@ div
 
     div.other-repos(slot='summary')
       :markdown-it
-        [The sources of the EGF website](https://github.com/Edinburgh-Genome-Foundry/egf-website-vue.js).
+
+        [EGF software slideshows and other material](https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents).
 
         [Web slides about the EGF](https://github.com/Edinburgh-Genome-Foundry/egf-slides)
 
-        [A collection of coder-friendly codon usage tables](https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables).
+        [Coder-friendly codon usage tables](https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables).
 
         [Scripts to download the iGEM database](https://github.com/Edinburgh-Genome-Foundry/igem-registry-downloader).
 
@@ -350,6 +352,7 @@ div
 import project from './ProjectCard'
 import myfooter from './Footer'
 import weblinks from './WebLinks'
+
 export default {
   name: 'hello',
   data () {
