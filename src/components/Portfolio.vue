@@ -16,6 +16,15 @@ div
     Most of our software is open-source and released
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
+  .alert
+    h3 We're hiring !
+    p.
+      An exciting opportunity for a computational biologist or software
+      engineer to take part in cutting edge biotech projects and learn new skills
+      in DNA design and synthetic biology automation!
+    
+    p(style='text-align: center')
+      a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=045604") Apply
 
   .header-links
     h3 Categories
@@ -34,7 +43,9 @@ div
           img='/static/imgs/logos/dnachisel.png',
           source='https://github.com/Edinburgh-Genome-Foundry/DnaChisel',
           docs='https://edinburgh-genome-foundry.github.io/DnaChisel/index.html',
-          demo='http://cuba.genomefoundry.org/sculpt-a-sequence')
+          demo='https://cuba.genomefoundry.org/sculpt-a-sequence'
+          :githubStars="{repo: 'dnachisel'}"
+          )
     div(slot='summary').
       Python library to optimize a sequence's nucleotides with respect to
       constraints and objectives. DNA Chisel allows to provide specifications as
@@ -45,7 +56,7 @@ div
           img='/static/imgs/logos/goldenhinges.png',
           source='https://github.com/Edinburgh-Genome-Foundry/GoldenHinges',
           docs='https://edinburgh-genome-foundry.github.io/GoldenHinges/index.html',
-          demo='http://cuba.genomefoundry.org/design-overhangs')
+          demo='https://cuba.genomefoundry.org/design-overhangs')
     div(slot='summary').
       Python library to find collections of compatible overhangs for Type-2S
       restriction-based assembly, or decompose
@@ -57,6 +68,7 @@ div
   project(img='/static/imgs/logos/dfv.png',
           title="DNA Features Viewer",
           subtitle="Display DNA features from Genbank etc.",
+          :githubStars="{repo: 'DnaFeaturesViewer'}",
           source='https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer')
     div(slot='summary').
       Customizable library to produce plots of sequence annotations (e.g. from
@@ -68,7 +80,8 @@ div
           subtitle="PDF plots of genetic assemblies"
           source='https://github.com/Edinburgh-Genome-Foundry/Caravagene',
           docs='https://edinburgh-genome-foundry.github.io/Caravagene/',
-          demo='http://cuba.genomefoundry.org/sketch_constructs')
+          demo='https://cuba.genomefoundry.org/sketch_constructs',
+          :githubStars="{repo: 'Caravagene'}")
     div(slot='summary').
       Python library for generating PDF reports of DNA assembly plots. The renderer
       uses HTML/CSS, allowing for good esthetics in many scenarios. Allows for
@@ -88,20 +101,23 @@ div
 
   project(img='/static/imgs/logos/crazydoc.png',
           title="CrazyDoc",
-          subtitle="Read sequences from Microsoft DOCX documents",
-          source='https://github.com/Edinburgh-Genome-Foundry/crazydoc')
+          subtitle="Read sequences from .docx files",
+          source='https://github.com/Edinburgh-Genome-Foundry/crazydoc',
+          :githubStars="{repo: 'crazydoc'}",
+          demo='https://cuba.genomefoundry.org/convert_sequence_files')
     div(slot='summary').
       Python library to parse the most common sequence annotation format: the
       colorful Microsoft Word document.
 
-  project(img='/static/imgs/logos/emma_db.png',
-          title="EMMA DB",
-          subtitle="Web repository for the EMMA standard",
-          website='https://design.emmadb.genomefoundry.org')
+  project(img='/static/imgs/logos/dab.png',
+          title="DAB",
+          subtitle="Assembly design portal of the EGF",
+          source='https://github.com/Edinburgh-Genome-Foundry/dab',
+          website='https://dab.genomefoundry.org')
     div(slot='summary').
-      This in-development project features a database of parts (powered by
-      JBEI's ICE) connected to a design tool specifically made for the EMMA
-      assembly standard.
+      EGF Design-And-Build makes it easy to discover the assembly standards
+      supported by the EGF (EMMA, MoClo, etc.), understand the options of each
+      standard, browse catalog of parts and (soon) domesticate and manage parts.
 
   project(img='/static/imgs/logos/genedom.png',
           title="Genedom",
@@ -122,8 +138,9 @@ div
 
   project(img='/static/imgs/logos/sequenticon.png',
           title="Sequenticon",
+          :githubStars="{repo: 'sequenticon'}",
           source='https://github.com/Edinburgh-Genome-Foundry/sequenticon',
-          demo='http://cuba.genomefoundry.org/render_sequenticons'
+          demo='https://cuba.genomefoundry.org/render-sequenticons'
           subtitle="Visual identifiers for DNA sequences")
     div(slot='summary').
       Sequenticon provides #[a(href="https://en.wikipedia.org/wiki/Identicon") identicons]
@@ -136,9 +153,10 @@ div
   project(title="DNA Cauldron",
           subtitle="A cloning simulator for synthetic biology",
           img='/static/imgs/logos/dnacauldron.png',
+          :githubStars="{repo: 'DnaCauldron'}",
           source='https://github.com/Edinburgh-Genome-Foundry/DnaCauldron',
           docs='https://edinburgh-genome-foundry.github.io/DnaCauldron/',
-          demo='http://cuba.genomefoundry.org/simulate_gg_assemblies')
+          demo='https://cuba.genomefoundry.org/simulate_gg_assemblies')
     div(slot='summary').
       Python library to simulate restriction-based assembly operations
       (Golden Gate, BASIC). Supports simple and combinatorial assemblies, and
@@ -148,19 +166,20 @@ div
   project(title="DNA Weaver",
           subtitle="A route planner for DNA assembly",
           img='/static/imgs/logos/dnaweaver.png',
+          demo='https://dnaweaver.genomefoundry.org',
           source='https://github.com/Edinburgh-Genome-Foundry/DnaWeaver')
     div(slot='summary').
       DNA Weaver computes optimal assembly strategies for long sequences of
       arbitrary DNA. It supports several assembly methods (Golden Gate assembly,
       Type-2S restriction enzymes, etc.) and can compare several sources of DNA
-      such as commercial providers or constructs.
+      such as commercial providers or constructs. Most awesome library on this page.
 
   project(title="BandWitch",
           subtitle="Restriction digests assistant",
           img='/static/imgs/logos/bandwitch.png',
           source='https://github.com/Edinburgh-Genome-Foundry/BandWitch',
           docs='https://edinburgh-genome-foundry.github.io/BandWitch/',
-          demo='http://cuba.genomefoundry.org/select_digestions')
+          demo='https://cuba.genomefoundry.org/select_digestions')
     div(slot='summary').
       Python library to automatically select the best enzymes to either validate
       or identify a batch of genetic assemblies. Also provides report generation
@@ -171,7 +190,8 @@ div
           title="Plateo",
           subtitle="Parsers and simulators for lab automation"
           source='https://github.com/Edinburgh-Genome-Foundry/Plateo',
-          docs='https://edinburgh-genome-foundry.github.io/Plateo/')
+          docs='https://edinburgh-genome-foundry.github.io/Plateo/',
+          :githubStars="{repo: 'Plateo'}")
     div(slot='summary').
       Plateo is a Python library to implements parsers and file generators to
       interface with many robots for biolab automation. Read microplate
@@ -182,7 +202,9 @@ div
           title="Primavera",
           subtitle="Primer-based verification assistant",
           source='https://github.com/Edinburgh-Genome-Foundry/Primavera',
-          docs='https://edinburgh-genome-foundry.github.io/Primavera/')
+          :githubStars="{repo: 'primavera'}",
+          docs='https://edinburgh-genome-foundry.github.io/Primavera/'
+          demo='https://cuba.genomefoundry.org/select_primers')
     div(slot='summary').
       Python library for primer selection and data analysis for assembly
       verification. Primavera can suggest an optimal set of primers to]
@@ -192,19 +214,20 @@ div
   project(img='/static/imgs/logos/geneblocks.png',
           title="Geneblocks",
           subtitle="Find common segments between DNA sequences"
-          demo='http://cuba.genomefoundry.org/find-common-blocks'
+          demo='https://cuba.genomefoundry.org/find-common-blocks'
           source='https://github.com/Edinburgh-Genome-Foundry/Geneblocks')
     div(slot='summary').
-      Python library for locating which segments are common to a set of sequences.
-      Used in various project to optimize BLAST, cloning strategies, or simply
-      for making sense of unannotated sequences.
+      Python library for either locating common segments between a set of sequences,
+      or highlighting differences between 2 sequences. Used in various project
+      to optimize BLAST, cloning strategies, or simply for making sense of
+      unannotated sequences.
 
   project(img='/static/imgs/logos/bandwagon.png',
           title="BandWagon",
           subtitle="Band patterns plotter and simulator",
           source='https://github.com/Edinburgh-Genome-Foundry/Bandwagon',
           docs='https://edinburgh-genome-foundry.github.io/BandWagon/',
-          demo='http://cuba.genomefoundry.org/predict-digestions')
+          demo='https://cuba.genomefoundry.org/predict-digestions')
     div(slot='summary').
       Python library to simulate DNA digestion by restriction enzymes and plot
       digestion patterns. Useful for prediciting experimental results or for
@@ -215,7 +238,7 @@ div
           subtitle="Web Collection of Useful Bio Apps",
           img='/static/imgs/logos/cuba.png',
           source='https://github.com/Edinburgh-Genome-Foundry/CUBA',
-          website='http://cuba.genomefoundry.org')
+          website='https://cuba.genomefoundry.org')
     div(slot='summary').
       Collection of publicly available one-page applications for DNA assembly
       and synthetic biology: restriction digest design, cloning simulation,
@@ -223,13 +246,14 @@ div
 
   project(img='/static/imgs/logos/smart_ass.png',
           title="Smart Assembly",
+          website='https://smartass.genomefoundry.org',
           subtitle="Web apps for Foundry operators")
     div(slot='summary').
       Collection of tailor-made web apps to help the Foundry operators through
       DNA assembly projects: automatic
       picklist generation, enzyme selection, and sequence validation for batches
       of DNA assemblies, communication between computers, parts repository browsing,
-      etc. This project is not currently public (ask us about it !).
+      etc. The website is not public (but you can ask us for a demo !).
 
   project(img='/static/imgs/logos/file_manager.png',
           title="The EGF File Manager",
@@ -243,7 +267,8 @@ div
           title="TaskPacker",
           subtitle="A generic scheduler for Python"
           source='https://github.com/Edinburgh-Genome-Foundry/TaskPacker',
-          docs='https://edinburgh-genome-foundry.github.io/Taskpacker/')
+          docs='https://edinburgh-genome-foundry.github.io/Taskpacker/',
+          :githubStars="{repo: 'Taskpacker'}")
     div(slot='summary').
       Python project to model tasks and processes and optimize the schedules of
       repetitive processes in order to predict factory throughputs.
@@ -263,6 +288,7 @@ div
   project(img='/static/imgs/logos/proglog.png',
           title="Proglog",
           subtitle="A versatile progress logger for Python",
+          :githubStars="{repo: 'proglog'}",
           source='https://github.com/Edinburgh-Genome-Foundry/proglog')
    div(slot='summary').
      Proglog is used as a unified progress logger in most computational
@@ -273,6 +299,7 @@ div
   project(img='/static/imgs/logos/flametree.png',
           title="Flametree",
           subtitle="Zip and folder operations made easy",
+          :githubStars="{repo: 'Flametree'}",
           source='https://github.com/Edinburgh-Genome-Foundry/Flametree')
     div(slot='summary').
       Python library to simplify file operations, in particular when zip archives
@@ -286,13 +313,15 @@ div
    div(slot='summary').
      CAB provides an easy way to deploy websites where users can fill
      a form and get computational jobs done, and is used accross several EGF
-     websites (CUBA, SmartAss. EMMA-DB). Built with VueJS on the frontend, Python/Django
+     websites (CUBA, SmartAss. EGF-DAB). Built with VueJS on the frontend, Python/Django
      on the backend, and Docker for integration.
 
   project(img='/static/imgs/logos/pdf_reports.png',
            title="PDF Reports",
            subtitle="Easy and clean PDF reports generation",
-           source='https://github.com/Edinburgh-Genome-Foundry/pdf_reports')
+           source='https://github.com/Edinburgh-Genome-Foundry/pdf_reports',
+           :githubStars="{repo: 'pdf_reports'}",
+           docs='http://edinburgh-genome-foundry.github.io/pdf_reports/')
     div(slot='summary').
       Python module to generate PDF reports using Pug templates, an the
       Semantic UI CSS framework.
@@ -312,13 +341,15 @@ div
     div.other-repos(slot='summary')
       :markdown-it
 
-        [EGF software slideshows and other material](https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents).
+        [EGF software slideshows and other documents](https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents).
 
         [Web slides about the EGF](https://github.com/Edinburgh-Genome-Foundry/egf-slides)
 
         [Coder-friendly codon usage tables](https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables).
 
         [Scripts to download the iGEM database](https://github.com/Edinburgh-Genome-Foundry/igem-registry-downloader).
+
+        [Overhang annealing data for Python (from Potapov 2018)](https://github.com/Edinburgh-Genome-Foundry/tatapov).
 
   .category(id='collaborations') Collaborations <hr>
 
@@ -433,6 +464,21 @@ hr {
   border: 0;
   height: 1px;
   width:600px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 
+.alert {
+  // border: 5px solid #e9e6fa;
+  // background: #fdfdff;
+  padding: 1.5em;
+  border-radius: 0.2em;
+  h3 {
+    margin-top: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  margin: 3em;
+  box-shadow: 0 1px 6px rgba(45, 47, 53, 0.16), 0 3px 6px rgba(66, 66, 104, 0.23);
+}
 </style>

@@ -1,15 +1,22 @@
 <template lang="pug">
 .project-div
+  
   img.project-logo(:src='img')
   h3.title(v-if='title') {{ title }}
   h4.subtitle(v-if='title') {{ subtitle }}
+  //- .gh-button
+    //- a.github-button(v-if='githubStars' :href="githubStars" data-show-count="true" aria-label="Star this project on GitHub") Star
+  
+
   .links
     a.website(v-if='website', :href='website') Website
     a.demo(v-if='demo', :href='demo') Demo
     a.paper(v-if='paper', :href='paper') Paper
     a.docs(v-if='docs', :href='docs') Docs
     a.source(v-if='source', :href='source') Source
-
+    span.github-stars(v-if='githubStars')
+      iframe(:src="`https://ghbtns.com/github-btn.html?user=${githubStars.user || 'edinburgh-genome-foundry'}&repo=${githubStars.repo}&type=star&count=true&size=small`" frameborder="0" scrolling="0" width="90px" height="30px")
+    
   p.summary
     slot(name='summary')
 </template>
@@ -24,7 +31,8 @@ export default {
     docs: null,
     demo: null,
     paper: null,
-    website: null
+    website: null,
+    githubStars: null
   }
 }
 </script>
@@ -95,6 +103,21 @@ a.source {
 
 a.website {
     background: url(/static/imgs/icons/demo.svg) no-repeat left;
+}
+
+.github-stars {
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 20px;
+  height: 10px;
+  /* margin-bottom: -15px; */
+  /* position: absolute; */
+  /* transform: translate(-50%); */
+  /* left: 50%; */
+  
+  /* margin-top: 5px; */
+  /* margin-bottom: 1em; */
+  /* text-align: center; */
 }
 
 </style>
