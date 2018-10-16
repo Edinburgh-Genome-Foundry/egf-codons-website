@@ -281,7 +281,16 @@ div
       Simple library to identify genetic parts associated with assembly failure
       (and therefore possibly corrupted) based on statistical evidence.
 
-
+  project(img='/static/imgs/logos/icebreaker.png',
+          title="Icebreaker",
+          subtitle="Python interface to JBEI ICE",
+          source='https://github.com/Edinburgh-Genome-Foundry/icebreaker',
+          docs='https://edinburgh-genome-foundry.github.io/icebreaker')
+    div(slot='summary').
+      Provides a Python client to manage parts and samples in an instance of the
+      #[a(href='https://github.com/JBEI/ice') JBEI ICE] parts repository system.
+      Makes it easy to open different sessions under
+      different identities, cache results, mass-import or export data, etc.
 
   .category(id='other') Generic Software <hr>
 
