@@ -17,11 +17,13 @@ div
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
   .alert
-    h3 We're hiring !
+    h3 Join us !
     p.
-      An exciting opportunity for a computational biologist or software
-      engineer to take part in cutting edge biotech projects and learn new skills
-      in DNA design and synthetic biology automation!
+      While we have no particular open position at the moment we are always
+      happy to hear about software developer with a passion for
+      synthetic biology or lab automation. If you are interested in developing
+      nice, reusable software at a pioneering DNA facility,
+      #[a(href='mailto:egf-software@ed.ac.uk?cc=hille.tekotte@ed.ac.uk, valentin.zulkower@ed.ac.uk&body=Hello EGF team!&subject=I want to join!') get in touch !]
     
     p(style='text-align: center')
       a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=045604") Apply
@@ -291,6 +293,17 @@ div
       #[a(href='https://github.com/JBEI/ice') JBEI ICE] parts repository system.
       Makes it easy to open different sessions under
       different identities, cache results, mass-import or export data, etc.
+  
+  project(img='/static/imgs/logos/blabel.png',
+          title="Blabel",
+          subtitle="Printable labels generator",
+          source='https://github.com/Edinburgh-Genome-Foundry/blabel',
+          docs='https://edinburgh-genome-foundry.github.io/blabel',
+          :githubStars="{repo: 'blabel'}")
+    div(slot='summary').
+      Python library to create PDFs which can be printed into sticky labels.
+      Easy barcode, QR-code, datamatrix generation, date formatting, layout
+      definition with HTML/CSS, and label data input with spreadsheets.
 
   .category(id='other') Generic Software <hr>
 
