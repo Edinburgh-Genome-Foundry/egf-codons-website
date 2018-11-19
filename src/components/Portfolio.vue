@@ -19,8 +19,7 @@ div
   .alert
     h3 Join us !
     p.
-      While we have no particular open position at the moment we are always
-      happy to hear about software developer with a passion for
+      We are always happy to hear about software developers with a passion for
       synthetic biology or lab automation. If you are interested in developing
       nice, reusable software at a pioneering DNA facility,
       #[a(href='mailto:egf-software@ed.ac.uk?cc=hille.tekotte@ed.ac.uk, valentin.zulkower@ed.ac.uk&body=Hello EGF team!&subject=I want to join!') get in touch !]
