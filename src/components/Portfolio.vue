@@ -195,9 +195,9 @@ div
           :githubStars="{repo: 'Plateo'}")
     div(slot='summary').
       Plateo is a Python library to implements parsers and file generators to
-      interface with many robots for biolab automation. Read microplate
+      interface with a biolab automation machines. Read microplate
       information (including experimental data) from many file formats, write
-      reports, generate and simulate picklists.
+      reports, generate and simulate picklists, etc.
 
   project(img='/static/imgs/logos/primavera.png',
           title="Primavera",
@@ -214,14 +214,16 @@ div
 
   project(img='/static/imgs/logos/geneblocks.png',
           title="Geneblocks",
+          :githubStars="{repo: 'geneblocks'}",
           subtitle="Find common segments between DNA sequences"
           demo='https://cuba.genomefoundry.org/find-common-blocks'
           source='https://github.com/Edinburgh-Genome-Foundry/Geneblocks')
     div(slot='summary').
-      Python library for either locating common segments between a set of sequences,
-      or highlighting differences between 2 sequences. Used in various project
-      to optimize BLAST, cloning strategies, or simply for making sense of
-      unannotated sequences.
+      Python library for comparing sequences, e.g. by locating common
+      segments between a set of sequences, transfering annotations between identical
+      regions, or highlighting differences between 2 sequences. Used to factorize
+      BLAST searches, optimize cloning strategies, transfer annotations
+      from parts to constructs, comparing sequence versions, etc.
 
   project(img='/static/imgs/logos/bandwagon.png',
           title="BandWagon",
@@ -243,7 +245,7 @@ div
     div(slot='summary').
       Collection of publicly available one-page applications for DNA assembly
       and synthetic biology: restriction digest design, cloning simulation,
-      sequence optimization, and more.
+      sequence optimization, and more. Now with 20+ apps, and counting.
 
   project(img='/static/imgs/logos/smart_ass.png',
           title="Smart Assembly",
@@ -262,7 +264,7 @@ div
     div(slot='summary').
       Server configuration to transmit files between personal computers, web
       applications, and the Foundry's robots, in a traceable and secure way.
-      This project is not currently public (ask us about it !).
+      This project is not currently public (ask us about it!).
 
   project(img='/static/imgs/logos/taskpacker.png',
           title="TaskPacker",
@@ -276,11 +278,15 @@ div
 
   project(img='/static/imgs/logos/saboteurs.png',
           title="Saboteurs",
+          :githubStars="{repo: 'Saboteurs'}",
           subtitle="Indentify faulty genetic parts",
           source='https://github.com/Edinburgh-Genome-Foundry/saboteurs')
     div(slot='summary').
-      Simple library to identify genetic parts associated with assembly failure
-      (and therefore possibly corrupted) based on statistical evidence.
+      Saboteurs can use statistical and logical methods to detect genetic parts
+      associated with assembly failure (and therefore possibly corrupted)
+      based on experimental assembly data. It can also design "test batches"
+      to check a set of parts and identify bad elements using a minimum of
+      test assemblies.
 
   project(img='/static/imgs/logos/icebreaker.png',
           title="Icebreaker",
@@ -303,6 +309,19 @@ div
       Python library to create PDFs which can be printed into sticky labels.
       Easy barcode, QR-code, datamatrix generation, date formatting, layout
       definition with HTML/CSS, and label data input with spreadsheets.
+  
+  project#kappagate(img='/static/imgs/logos/kappagate.png',
+          title="Kappagate",
+          subtitle="Clone success rate prediction",
+          :githubStars="{repo: 'kappagate'}",
+          source='https://github.com/Edinburgh-Genome-Foundry/kappagate')
+   div(slot='summary').
+     Kappagate combines experimental misannealing data
+     (#[a(href="https://www.biorxiv.org/content/early/2018/05/15/322297") Potapov et. al])
+     and #[a(href="") Kappa] simulations to predict the proportion of valid clones
+     (vs. clones harbouring wrong, misannealed constructs) in type-2S assemblies
+     (Golden Gate, OGAB, etc). Used to detect assemblies with
+     low chances of success, or estimate colonies to pick to find valid clones.
 
   .category(id='other') Generic Software <hr>
 
@@ -349,12 +368,23 @@ div
 
   project(img='/static/imgs/logos/bioprinter.png',
           title="BioPrinter",
-          subtitle="Print pictures using colored micro-organisms !",
+          subtitle="Print pictures using colored micro-organisms!",
           docs='http://edinburgh-genome-foundry.github.io/bioprinter/',
           source='https://github.com/Edinburgh-Genome-Foundry/bioprinter')
    div(slot='summary').
      Python module to <i>print</i> living art pictures using pigmented yeast or
      bacteria. After an original project by Mike Shen (Boeke Lab).
+
+  project(img='/static/imgs/logos/topkappy.png',
+          title="Topkappy",
+          subtitle="Pythonic bindings for the Kappa language",
+          :githubStars="{repo: 'topkappy'}",
+          source='https://github.com/Edinburgh-Genome-Foundry/topkappy')
+   div(slot='summary').
+     Python module to easily create, run and analyze biological complexation
+     simulations using the #[a(href='https://kappalanguage.org/') Kappa language].
+     Used in #[a(href='#kappagate') Kappagate] to easily define hundreds of
+     interactions between DNA fragments.
 
   project(title="Other Github repositories",
           subtitle="...too small to have a logo")
@@ -370,7 +400,7 @@ div
 
         [Scripts to download the iGEM database](https://github.com/Edinburgh-Genome-Foundry/igem-registry-downloader).
 
-        [Overhang annealing data for Python (from Potapov 2018)](https://github.com/Edinburgh-Genome-Foundry/tatapov).
+        [Overhang annealing data for Python (from Potapov et al.)](https://github.com/Edinburgh-Genome-Foundry/tatapov).
 
   .category(id='collaborations') Collaborations <hr>
 
@@ -388,14 +418,13 @@ div
   project(img='/static/imgs/logos/genetic_constructor.png',
          title="Autodesk Genetic Constructor",
          subtitle="A web-based toolkit for synthetic biology",
-         website='https://geneticconstructor.lifesciences.autodesk.com/',
          paper='http://pubs.acs.org/doi/full/10.1021/acssynbio.7b00236')
     div(slot='summary').
-      This sequence designer with modern features such as nested constructs,
-      templates, and the possibility to browse external part repositories, was started in 2015 as a
-      collaboration between Autodesk and the EGF. We provided initial input in
-      specifications, software design, and a web API to order directly
-      from the EGF via Genetic Constructor.
+      (Discontinued in 2018) This sequence designer with modern features such as
+      nested constructs, templates, and the possibility to browse external part
+      repositories, was started in 2015 as a collaboration between Autodesk and
+      the EGF. We provided initial input in specifications, software design,
+      and a web API to order directly from the EGF via Genetic Constructor.
 
   myfooter
 </template>
