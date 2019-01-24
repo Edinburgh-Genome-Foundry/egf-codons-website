@@ -17,15 +17,19 @@ div
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
   .alert
-    h3 Join us !
+    h3 We're hiring!
+    //- p.
+      //- We are always happy to hear about software developers with a passion for
+      //- synthetic biology or lab automation. If you are interested in developing
+      //- nice, reusable software at a pioneering DNA facility,
+      //- #[a(href='mailto:egf-software@ed.ac.uk?cc=hille.tekotte@ed.ac.uk, valentin.zulkower@ed.ac.uk&body=Hello EGF team!&subject=I want to join!') get in touch !]
     p.
-      We are always happy to hear about software developers with a passion for
-      synthetic biology or lab automation. If you are interested in developing
-      nice, reusable software at a pioneering DNA facility,
-      #[a(href='mailto:egf-software@ed.ac.uk?cc=hille.tekotte@ed.ac.uk, valentin.zulkower@ed.ac.uk&body=Hello EGF team!&subject=I want to join!') get in touch !]
+      That's a great opportunity for a computational biologist or software
+      engineer to take part in cutting edge biotech projects and learn new skills
+      in DNA design and synthetic biology automation!
     
     p(style='text-align: center')
-      a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=045604") Apply
+      a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=046558") Apply
 
   .header-links
     h3 Categories
@@ -44,7 +48,7 @@ div
           img='/static/imgs/logos/dnachisel.png',
           source='https://github.com/Edinburgh-Genome-Foundry/DnaChisel',
           docs='https://edinburgh-genome-foundry.github.io/DnaChisel/index.html',
-          demo='https://cuba.genomefoundry.org/sculpt-a-sequence'
+          demo='https://cuba.genomefoundry.org/sculpt-a-sequence',
           :githubStars="{repo: 'dnachisel'}"
           )
     div(slot='summary').
@@ -57,6 +61,7 @@ div
           img='/static/imgs/logos/goldenhinges.png',
           source='https://github.com/Edinburgh-Genome-Foundry/GoldenHinges',
           docs='https://edinburgh-genome-foundry.github.io/GoldenHinges/index.html',
+          :githubStars="{repo: 'goldenhinges'}",
           demo='https://cuba.genomefoundry.org/design-overhangs')
     div(slot='summary').
       Python library to find collections of compatible overhangs for Type-2S
@@ -147,7 +152,19 @@ div
       Sequenticon provides #[a(href="https://en.wikipedia.org/wiki/Identicon") identicons]
       for DNA sequences, to quickly check accross project reports whether two mentionned
       genetic parts have exactly the same sequence.
+  
+  project(img='/static/imgs/logos/zymp.png',
+          title="Zymp",
+          :githubStars="{repo: 'zymp'}",
+          source='https://github.com/Edinburgh-Genome-Foundry/zymp',
+          subtitle="Restriction array designer")
+    div(slot='summary').
+      Zymp is a small python utility to help design compact sequences packed
+      with many restriction enzyme recognition sites. Originally written for
+      creating "universal" controls for restriction digests.
 
+  //- ==========================================================================
+  //- ==========================================================================
 
   .category(id='build', name='manufacturing') Build <hr>
 
@@ -370,6 +387,7 @@ div
           title="BioPrinter",
           subtitle="Print pictures using colored micro-organisms!",
           docs='http://edinburgh-genome-foundry.github.io/bioprinter/',
+          :githubStars="{repo: 'bioprinter'}",
           source='https://github.com/Edinburgh-Genome-Foundry/bioprinter')
    div(slot='summary').
      Python module to <i>print</i> living art pictures using pigmented yeast or
