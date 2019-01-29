@@ -40,9 +40,9 @@ export default {
 <style scoped>
 
 .project-div {
-  display:block;
+  display: block;
   margin: 30px auto 60px;
-  width: 450px;
+  width: 25em;
   max-width: 90%;
 }
 
@@ -53,14 +53,15 @@ img.project-logo {
     max-height: 100px;
 }
 .links {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
+  line-height: 2em;
 }
 
 .links a {
     display: inline-block;
-    height: 20px;
-    font-size:16px;
+    /* height: 20px; */
+    font-size:0.9em;
     text-decoration: none;
     color: black;
     text-align: left;
@@ -76,13 +77,13 @@ img.project-logo {
 }
 
 h3.title {
-  font-size: 28px;
+  font-size: 1.8em;
   margin-bottom: 0px;
 }
 
 h4.subtitle {
   margin-top: 0;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 .summary {
@@ -106,11 +107,11 @@ a.website {
 }
 
 .github-stars {
-  vertical-align: top;
+  vertical-align: middle;
   display: inline-block;
   margin-left: 20px;
   height: 10px;
-  /* margin-bottom: -15px; */
+  margin-bottom: 15px;
   /* position: absolute; */
   /* transform: translate(-50%); */
   /* left: 50%; */

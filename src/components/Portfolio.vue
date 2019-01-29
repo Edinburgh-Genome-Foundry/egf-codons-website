@@ -2,7 +2,7 @@
 div
   github-corners(repo="Edinburgh-Genome-Foundry" bg-color='#514ec5')
   img.title-logo(src='/static/imgs/logos/egf-codon.svg')
-  h1 The Software Suite of the <br /> Edinburgh Genome Foundry
+  h1 The Software Suite of the Edinburgh Genome Foundry
   weblinks(emailSubject='[EGF-Codons] Feedback on the EGF software'
            tweetMessage='EGF Codons: free software for DNA design, assembly, and more.',
            tweetUrl='https://edinburgh-genome-foundry.github.io/',
@@ -34,8 +34,11 @@ div
   .header-links
     h3 Categories
     a(href='#design') Design
+    br
     a(href='#build') Build
+    br
     a(href='#other') Generic software
+    br
     a(href='#collaborations') Collaborations
 
 
@@ -467,29 +470,27 @@ export default {
     margin-bottom: 30px;
 }
 .header-links {
-  margin-top: 2em;
+  margin-top: 3em;
   margin-bottom: 3em;
-  h3 {
-    margin-bottom: 2em
-  }
 
   a {
     text-align: center;
     color: grey;
     text-decoration: none;
     font-size: 1.1em;
-    padding-top: -2em;
-    margin-left: 4%;
-    margin-right: 4%;
+    // margin-left: 4%;
+    // margin-right: 4%;
     &:hover { color: black}
   }
 }
 
 p {
   text-align: left;
+  font-size: 5mm;
 }
 
 h1 {
+  // font-size: 1.8em;
 
 }
 h1, h2 {
@@ -520,7 +521,7 @@ a {
 }
 
 .category {
-    font-size: 25px;
+    font-size: 1.5em;
     margin-top: 100px;
     margin-bottom: 50px;
     font-weight: bold;
@@ -531,7 +532,7 @@ a {
 hr {
   border: 0;
   height: 1px;
-  width:600px;
+  width:100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
@@ -546,7 +547,8 @@ hr {
   p {
     margin-bottom: 0;
   }
-  margin: 3em;
+  margin: 3em 1em 3em 1em;
+
   box-shadow: 0 1px 6px rgba(45, 47, 53, 0.16), 0 3px 6px rgba(66, 66, 104, 0.23);
 }
 </style>

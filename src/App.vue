@@ -11,11 +11,15 @@ export default {
 </script>
 
 <style>
-
+html {
+  width: auto;
+}
 body {
+    display: block;
     width: 600px;
     max-width: 95%;
     margin: 0 auto;
+    font-size: 5mm;
 }
 
 #app {
