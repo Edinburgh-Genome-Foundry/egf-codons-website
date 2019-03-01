@@ -17,16 +17,16 @@ div
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
   .alert
-    h3 We're hiring!
-    //- p.
-      //- We are always happy to hear about software developers with a passion for
-      //- synthetic biology or lab automation. If you are interested in developing
-      //- nice, reusable software at a pioneering DNA facility,
-      //- #[a(href='mailto:egf-software@ed.ac.uk?cc=hille.tekotte@ed.ac.uk, valentin.zulkower@ed.ac.uk&body=Hello EGF team!&subject=I want to join!') get in touch !]
+    h3 Join us!
     p.
-      That's a great opportunity for a computational biologist or software
-      engineer to take part in cutting edge biotech projects and learn new skills
-      in DNA design and synthetic biology automation!
+      We are always happy to hear about software developers with a passion for
+      synthetic biology or lab automation. If you are interested in developing
+      nice, reusable software at a pioneering DNA facility,
+      #[a(href='mailto:egf-software@ed.ac.uk?cc=hille.tekotte@ed.ac.uk, valentin.zulkower@ed.ac.uk&body=Hello EGF team!&subject=I want to join!') get in touch !]
+    //- p.
+    //-   That's a great opportunity for a computational biologist or software
+    //-   engineer to take part in cutting edge biotech projects and learn new skills
+    //-   in DNA design and synthetic biology automation!
     
     p(style='text-align: center')
       a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=046558") Apply
@@ -51,7 +51,7 @@ div
           img='/static/imgs/logos/dnachisel.png',
           source='https://github.com/Edinburgh-Genome-Foundry/DnaChisel',
           docs='https://edinburgh-genome-foundry.github.io/DnaChisel/index.html',
-          demo='https://cuba.genomefoundry.org/sculpt-a-sequence',
+          demo='https://cuba.genomefoundry.org/sculpt_a_sequence',
           :githubStars="{repo: 'dnachisel'}"
           )
     div(slot='summary').
@@ -130,6 +130,8 @@ div
 
   project(img='/static/imgs/logos/genedom.png',
           title="Genedom",
+          :githubStars="{repo: 'genedom'}",
+          demo='https://cuba.genomefoundry.org/domesticate_part_batches'
           source='https://github.com/Edinburgh-Genome-Foundry/genedom',
           subtitle="Automated parts domestication")
     div(slot='summary').
@@ -159,6 +161,7 @@ div
   project(img='/static/imgs/logos/zymp.png',
           title="Zymp",
           :githubStars="{repo: 'zymp'}",
+          demo='https://cuba.genomefoundry.org/design-sites-arrays',
           source='https://github.com/Edinburgh-Genome-Foundry/zymp',
           subtitle="Restriction array designer")
     div(slot='summary').
@@ -235,15 +238,15 @@ div
   project(img='/static/imgs/logos/geneblocks.png',
           title="Geneblocks",
           :githubStars="{repo: 'geneblocks'}",
-          subtitle="Find common segments between DNA sequences"
+          subtitle="Human-friendly DNA sequences comparator"
           demo='https://cuba.genomefoundry.org/find-common-blocks'
           source='https://github.com/Edinburgh-Genome-Foundry/Geneblocks')
     div(slot='summary').
-      Python library for comparing sequences, e.g. by locating common
+      Python library and web apps for comparing sequences, e.g. by locating common
       segments between a set of sequences, transfering annotations between identical
       regions, or highlighting differences between 2 sequences. Used to factorize
       BLAST searches, optimize cloning strategies, transfer annotations
-      from parts to constructs, comparing sequence versions, etc.
+      from parts to constructs, compare sequence versions, etc.
 
   project(img='/static/imgs/logos/bandwagon.png',
           title="BandWagon",
@@ -333,6 +336,7 @@ div
   project#kappagate(img='/static/imgs/logos/kappagate.png',
           title="Kappagate",
           subtitle="Clone success rate prediction",
+          demo='https://cuba.genomefoundry.org/predict-bad-clone-rates',
           :githubStars="{repo: 'kappagate'}",
           source='https://github.com/Edinburgh-Genome-Foundry/kappagate')
    div(slot='summary').
