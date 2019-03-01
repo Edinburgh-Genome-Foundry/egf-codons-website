@@ -28,8 +28,8 @@ div
     //-   engineer to take part in cutting edge biotech projects and learn new skills
     //-   in DNA design and synthetic biology automation!
     
-    p(style='text-align: center')
-      a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=046558") Apply
+    //- p(style='text-align: center')
+    //-   a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=046558") Apply
 
   .header-links
     h3 Categories
