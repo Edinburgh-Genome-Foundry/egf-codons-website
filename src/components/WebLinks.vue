@@ -1,6 +1,6 @@
 <template lang='pug'>
 .weblinks-bar
-  a.tweet(v-if='tweetMessage', :href='twitterHref') <img src='/static/imgs/icons/twitter.svg'> Tweet
+  a.tweet(v-if='tweetMessage', :href='twitterHref') <img src='/static/imgs/icons/twitter.svg'> {{tweetText}}
   a.email(v-if='emailSubject', :href='emailHref')  <img src='/static/imgs/icons/email.svg'> Send feedback
 </template>
 
@@ -12,7 +12,8 @@ export default {
     emailSubject: {default: () => null},
     tweetMessage: {default: () => null},
     tweetUrl: {default: () => ''},
-    tweetHashtags: {default: ''}
+    tweetHashtags: {default: ''},
+    tweetText: {default: 'Tweet'}
   },
   data: {
   },

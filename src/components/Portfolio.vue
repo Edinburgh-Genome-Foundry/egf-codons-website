@@ -27,7 +27,8 @@ div
      a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=047555") Apply
      weblinks(tweetMessage='The Edinburgh Genome Foundry is hiring a Software Engineer for automating its Synthetic Biology robotics platform!',
                tweetUrl='https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=047555',
-               tweetHashtags='synbio,software,automation' style='margin-bottom: 0px;')
+               tweetHashtags='synbio,software,automation' style='margin-bottom: 0px;'
+               tweetText='Spread the word!')
       
     //- p.
     //-   We are always happy to hear about software developers with a passion for
@@ -69,7 +70,6 @@ div
           img='/static/imgs/logos/goldenhinges.png',
           source='https://github.com/Edinburgh-Genome-Foundry/GoldenHinges',
           docs='https://edinburgh-genome-foundry.github.io/GoldenHinges/index.html',
-          :githubStars="{repo: 'goldenhinges'}",
           demo='https://cuba.genomefoundry.org/design-overhangs')
     div(slot='summary').
       Python library to find collections of compatible overhangs for Type-2S
@@ -207,7 +207,6 @@ div
   project(title="BandWitch",
           subtitle="Restriction digests assistant",
           img='/static/imgs/logos/bandwitch.png',
-          :githubStars="{repo: 'bandwitch'}",
           source='https://github.com/Edinburgh-Genome-Foundry/BandWitch',
           docs='https://edinburgh-genome-foundry.github.io/BandWitch/',
           demo='https://cuba.genomefoundry.org/select_digestions')
