@@ -6,7 +6,7 @@ div
   weblinks(emailSubject='[EGF-Codons] Feedback on the EGF software'
            tweetMessage='EGF Codons: free software for DNA design, assembly, and more.',
            tweetUrl='https://edinburgh-genome-foundry.github.io/',
-           tweetHashtags='synbio, software')
+           tweetHashtags='synbio,software')
 
   p.
     The <a target='_blank' href='http://genomefoundry.org/'>Genome Foundry</a>
@@ -23,9 +23,12 @@ div
       engineer to take part in cutting edge biotech projects, learn new skills
       in DNA design and lab automation, and lead the development of open-source
       tools for synthetic biology!
-    
     p(style='text-align: center')
-      a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=046558") Apply
+     a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=047555") Apply
+     weblinks(tweetMessage='The Edinburgh Genome Foundry is hiring a Software Engineer for automating its Synthetic Biology robotics platform!',
+               tweetUrl='https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=047555',
+               tweetHashtags='synbio,software,automation' style='margin-bottom: 0px;')
+      
     //- p.
     //-   We are always happy to hear about software developers with a passion for
     //-   synthetic biology or lab automation. If you are interested in developing

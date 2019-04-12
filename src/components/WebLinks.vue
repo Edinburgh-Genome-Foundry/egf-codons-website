@@ -19,17 +19,16 @@ export default {
   computed: {
     emailHref: function () {
       return ('mailto:egf-software@ed.ac.uk?' +
-              '&cc=hille.tekotte@ed.ac.uk, valentin.zulkower@ed.ac.uk' +
+              '&cc=valentin.zulkower@ed.ac.uk' +
               '&body=Hello EGF team !' +
               '&subject=' + this.emailSubject)
     },
     twitterHref: function () {
       return ('https://twitter.com/intent/tweet?' +
-              'hashtags=synbio,software' +
+              'hashtags=' + this.tweetHashtags +
               '&text=' + this.tweetMessage +
               '&url=' + this.tweetUrl +
-              '&via=EdinGenFoundry' +
-              '&hashtags=' + this.tweetHashtags)
+              '&via=EdinGenFoundry')
     }
   }
 }
