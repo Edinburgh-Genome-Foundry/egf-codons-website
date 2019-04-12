@@ -17,19 +17,21 @@ div
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
   .alert
-    h3 Join us!
+    h3 We're hiring!
     p.
-      We are always happy to hear about software developers with a passion for
-      synthetic biology or lab automation. If you are interested in developing
-      nice, reusable software at a pioneering DNA facility,
-      #[a(href='mailto:egf-software@ed.ac.uk?cc=hille.tekotte@ed.ac.uk, valentin.zulkower@ed.ac.uk&body=Hello EGF team!&subject=I want to join!') get in touch !]
-    //- p.
-    //-   That's a great opportunity for a computational biologist or software
-    //-   engineer to take part in cutting edge biotech projects and learn new skills
-    //-   in DNA design and synthetic biology automation!
+      This is a great opportunity for a computational biologist or software
+      engineer to take part in cutting edge biotech projects, learn new skills
+      in DNA design and lab automation, and lead the development of open-source
+      tools for synthetic biology!
     
-    //- p(style='text-align: center')
-    //-   a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=046558") Apply
+    p(style='text-align: center')
+      a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=046558") Apply
+    //- p.
+    //-   We are always happy to hear about software developers with a passion for
+    //-   synthetic biology or lab automation. If you are interested in developing
+    //-   nice, reusable software at a pioneering DNA facility,
+    //-   #[a(href='mailto:egf-software@ed.ac.uk?cc=hille.tekotte@ed.ac.uk, valentin.zulkower@ed.ac.uk&body=Hello EGF team!&subject=I want to join!') get in touch !]
+    
 
   .header-links
     h3 Categories
@@ -100,6 +102,7 @@ div
   project(img='/static/imgs/logos/visual-sbol-css.png',
           title="Visual SBOL CSS",
           subtitle="Super-easy construct plotting for the web",
+          :githubStars="{repo: 'SBOL-Visual-CSS'}",
           source='https://github.com/Edinburgh-Genome-Foundry/SBOL-Visual-CSS',
           docs='https://edinburgh-genome-foundry.github.io/SBOL-Visual-CSS/',
           demo='https://edinburgh-genome-foundry.github.io/SBOL-Visual-CSS/examples/drag_and_drop_construct_editor.html')
@@ -201,6 +204,7 @@ div
   project(title="BandWitch",
           subtitle="Restriction digests assistant",
           img='/static/imgs/logos/bandwitch.png',
+          :githubStars="{repo: 'bandwitch'}",
           source='https://github.com/Edinburgh-Genome-Foundry/BandWitch',
           docs='https://edinburgh-genome-foundry.github.io/BandWitch/',
           demo='https://cuba.genomefoundry.org/select_digestions')
