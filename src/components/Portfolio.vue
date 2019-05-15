@@ -16,19 +16,19 @@ div
     Most of our software is open-source and released
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
-  .alert
-    h3 We're hiring!
-    p.
-      This is a great opportunity for a computational biologist or software
-      engineer to take part in cutting edge biotech projects, learn new skills
-      in DNA design and lab automation, and lead the development of open-source
-      tools for synthetic biology!
-    p(style='text-align: center')
-     a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=047555") Apply
-     weblinks(tweetMessage='The Edinburgh Genome Foundry is hiring a Software Engineer for automating its Synthetic Biology robotics platform!',
-               tweetUrl='https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=047555',
-               tweetHashtags='synbio,software,automation' style='margin-bottom: 0px;'
-               tweetText='Spread the word!')
+  //- .alert
+  //-   h3 We're hiring!
+  //-   p.
+  //-     This is a great opportunity for a computational biologist or software
+  //-     engineer to take part in cutting edge biotech projects, learn new skills
+  //-     in DNA design and lab automation, and lead the development of open-source
+  //-     tools for synthetic biology!
+  //-   p(style='text-align: center')
+  //-    a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=047555") Apply
+  //-    weblinks(tweetMessage='The Edinburgh Genome Foundry is hiring a Software Engineer for automating its Synthetic Biology robotics platform!',
+  //-              tweetUrl='https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=047555',
+  //-              tweetHashtags='synbio,software,automation' style='margin-bottom: 0px;'
+  //-              tweetText='Spread the word!')
       
     //- p.
     //-   We are always happy to hear about software developers with a passion for
@@ -195,6 +195,7 @@ div
 
   project(title="DNA Weaver",
           subtitle="A route planner for DNA assembly",
+          :githubStars="{repo: 'dnaweaver'}",
           img='/static/imgs/logos/dnaweaver.png',
           demo='https://dnaweaver.genomefoundry.org',
           source='https://github.com/Edinburgh-Genome-Foundry/DnaWeaver')
@@ -256,6 +257,7 @@ div
 
   project(img='/static/imgs/logos/bandwagon.png',
           title="BandWagon",
+          :githubStars="{repo: 'bandwagon'}",
           subtitle="Band patterns plotter and simulator",
           source='https://github.com/Edinburgh-Genome-Foundry/Bandwagon',
           docs='https://edinburgh-genome-foundry.github.io/BandWagon/',
@@ -378,6 +380,7 @@ div
 
   project(img='/static/imgs/logos/cab.png',
           title="CAB",
+          :githubStars="{repo: 'cab'}",
           subtitle="A friendly boilerplate for computational apps",
           source='https://github.com/Edinburgh-Genome-Foundry/CAB')
    div(slot='summary').
