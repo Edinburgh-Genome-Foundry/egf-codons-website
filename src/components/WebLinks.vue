@@ -1,6 +1,6 @@
 <template lang='pug'>
 .weblinks-bar
-  a.tweet(v-if='tweetMessage', :href='twitterHref') <img src='/static/imgs/icons/twitter.svg'> {{tweetText}}
+  a.tweet(v-if='tweetMessage', :href='twitterHref' target='blank_') <img src='/static/imgs/icons/twitter.svg'> {{tweetText}}
   a.email(v-if='emailSubject', :href='emailHref')  <img src='/static/imgs/icons/email.svg'> Send feedback
 </template>
 

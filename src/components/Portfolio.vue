@@ -16,19 +16,18 @@ div
     Most of our software is open-source and released
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
-  //- .alert
-  //-   h3 We're hiring!
-  //-   p.
-  //-     This is a great opportunity for a computational biologist or software
-  //-     engineer to take part in cutting edge biotech projects, learn new skills
-  //-     in DNA design and lab automation, and lead the development of open-source
-  //-     tools for synthetic biology!
-  //-   p(style='text-align: center')
-  //-    a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=047555") Apply
-  //-    weblinks(tweetMessage='The Edinburgh Genome Foundry is hiring a Software Engineer for automating its Synthetic Biology robotics platform!',
-  //-              tweetUrl='https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=047555',
-  //-              tweetHashtags='synbio,software,automation' style='margin-bottom: 0px;'
-  //-              tweetText='Spread the word!')
+  .alert
+    h3 We're hiring a <br/>Biofoundry Computational Biologist!
+    p.
+      This is a great opportunity to take part in cutting edge biotech projects,
+      learn new skills in DNA design and lab automation, and lead the development of open-source
+      tools for synthetic biology!
+    p(style='text-align: center')
+     a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=049094", target='blank_') Apply
+     weblinks(tweetMessage='The Edinburgh Genome Foundry is hiring a Biofoundry Computational Biologist for its Synthetic Biology robotics platform!',
+              tweetUrl='https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=049094',
+              tweetHashtags='synbio,software,automation' style='margin-bottom: 0px;'
+              tweetText='Spread the word!')
       
     //- p.
     //-   We are always happy to hear about software developers with a passion for
@@ -70,7 +69,8 @@ div
           img='/static/imgs/logos/goldenhinges.png',
           source='https://github.com/Edinburgh-Genome-Foundry/GoldenHinges',
           docs='https://edinburgh-genome-foundry.github.io/GoldenHinges/index.html',
-          demo='https://cuba.genomefoundry.org/design-overhangs')
+          demo='https://cuba.genomefoundry.org/design-overhangs'
+          :githubStars="{repo: 'GoldenHinges'}")
     div(slot='summary').
       Python library to find collections of compatible overhangs for Type-2S
       restriction-based assembly, or decompose
@@ -128,7 +128,8 @@ div
           title="DAB",
           subtitle="Assembly design portal of the EGF",
           source='https://github.com/Edinburgh-Genome-Foundry/dab',
-          website='https://dab.genomefoundry.org')
+          website='https://dab.genomefoundry.org'
+          :githubStars="{repo: 'dab'}")
     div(slot='summary').
       EGF Design-And-Build makes it easy to discover the assembly standards
       supported by the EGF (EMMA, MoClo, etc.), understand the options of each
@@ -210,7 +211,8 @@ div
           img='/static/imgs/logos/bandwitch.png',
           source='https://github.com/Edinburgh-Genome-Foundry/BandWitch',
           docs='https://edinburgh-genome-foundry.github.io/BandWitch/',
-          demo='https://cuba.genomefoundry.org/select_digestions')
+          demo='https://cuba.genomefoundry.org/select_digestions'
+          :githubStars="{repo: 'bandwitch'}")
     div(slot='summary').
       Python library to automatically select the best enzymes to either validate
       or identify a batch of genetic assemblies. Also provides report generation
@@ -323,7 +325,8 @@ div
           title="Icebreaker",
           subtitle="Python interface to JBEI ICE",
           source='https://github.com/Edinburgh-Genome-Foundry/icebreaker',
-          docs='https://edinburgh-genome-foundry.github.io/icebreaker')
+          docs='https://edinburgh-genome-foundry.github.io/icebreaker'
+          :githubStars="{repo: 'icebreaker'}")
     div(slot='summary').
       Provides a Python client to manage parts and samples in an instance of the
       #[a(href='https://github.com/JBEI/ice') JBEI ICE] parts repository system.
