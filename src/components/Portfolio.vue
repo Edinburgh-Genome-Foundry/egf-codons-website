@@ -9,25 +9,25 @@ div
            tweetHashtags='synbio,software')
 
   p.
-    The <a target='_blank' href='http://genomefoundry.org/'>Genome Foundry</a>
+    The <a target='_blank' href='http://www.genomefoundry.org/'>Genome Foundry</a>
     is an academic facility running a highly automated robotic setup for DNA
     assembly automation. The software team develops computational libraries
     and web applications for DNA design and assembly, Lab Automation, and more.
     Most of our software is open-source and released
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
-  .alert
-    h3 We're hiring a <br/>Biofoundry Computational Biologist!
-    p.
-      This is a great opportunity to take part in cutting edge biotech projects,
-      learn new skills in DNA design and lab automation, and lead the development of open-source
-      tools for synthetic biology!
-    p(style='text-align: center')
-     a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=049094", target='blank_') Apply
-     weblinks(tweetMessage='The Edinburgh Genome Foundry is hiring a Biofoundry Computational Biologist for its Synthetic Biology robotics platform!',
-              tweetUrl='https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=049094',
-              tweetHashtags='synbio,software,automation' style='margin-bottom: 0px;'
-              tweetText='Spread the word!')
+  //- .alert
+  //-   h3 We're hiring a <br/>Biofoundry Computational Biologist!
+  //-   p.
+  //-     This is a great opportunity to take part in cutting edge biotech projects,
+  //-     learn new skills in DNA design and lab automation, and lead the development of open-source
+  //-     tools for synthetic biology!
+  //-   p(style='text-align: center')
+  //-    a(href="https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=049094", target='blank_') Apply
+  //-    weblinks(tweetMessage='The Edinburgh Genome Foundry is hiring a Biofoundry Computational Biologist for its Synthetic Biology robotics platform!',
+  //-             tweetUrl='https://www.vacancies.ed.ac.uk/pls/corehrrecruit/erq_jobspec_version_4.jobspec?p_id=049094',
+  //-             tweetHashtags='synbio,software,automation' style='margin-bottom: 0px;'
+  //-             tweetText='Spread the word!')
       
     //- p.
     //-   We are always happy to hear about software developers with a passion for
