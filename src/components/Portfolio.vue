@@ -456,6 +456,7 @@ div
 
         [Scripts to download the iGEM database](https://github.com/Edinburgh-Genome-Foundry/igem-registry-downloader)
 
+        [Dioscuri is a Python package for working with Gemini WorkList (gwl) files and objects.](https://github.com/Edinburgh-Genome-Foundry/dioscuri/)
 
   .category(id='collaborations') Collaborations <hr>
 
