@@ -365,6 +365,17 @@ div
      (Golden Gate, OGAB, etc). Used to detect assemblies with
      low chances of success, or estimate colonies to pick to find valid clones.
 
+  project#tatapov(img='/static/imgs/logos/tatapov.png',
+          title="Tatapov",
+          subtitle="DNA overhang misannealing data",
+          demo='https://cuba.genomefoundry.org/design-overhangs',
+          source='https://github.com/Edinburgh-Genome-Foundry/tatapov',
+          :githubStars="{repo: 'tatapov'}")
+   div(slot='summary').
+     Tatapov finds sets of compatible overhangs for Golden Gate assembly, to extend an
+     assembly standard or to decompose a sequence into compatible fragments.
+
+
   .category(id='other') Generic Software <hr>
 
   project(img='/static/imgs/logos/proglog.png',
@@ -445,7 +456,6 @@ div
 
         [Scripts to download the iGEM database](https://github.com/Edinburgh-Genome-Foundry/igem-registry-downloader)
 
-        [Overhang annealing data for Python (from *Potapov et al.*)](https://github.com/Edinburgh-Genome-Foundry/tatapov)
 
   .category(id='collaborations') Collaborations <hr>
 
