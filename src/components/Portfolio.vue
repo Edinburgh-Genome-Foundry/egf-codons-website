@@ -368,12 +368,12 @@ div
   project#tatapov(img='/static/imgs/logos/tatapov.png',
           title="Tatapov",
           subtitle="DNA overhang misannealing data",
-          demo='https://cuba.genomefoundry.org/design-overhangs',
+          demo='https://cuba.genomefoundry.org/view-overhangs-crosstalk',
           source='https://github.com/Edinburgh-Genome-Foundry/tatapov',
           :githubStars="{repo: 'tatapov'}")
    div(slot='summary').
-     Tatapov finds sets of compatible overhangs for Golden Gate assembly, to extend an
-     assembly standard or to decompose a sequence into compatible fragments.
+     Tatapov visualizes DNA overhang misannealing data from <i>Potapov et al.</i>
+     (2018, ACS Synth. Biol.) and <i>Pryor et al.</i> (2020, PLoS ONE).
 
   project#minotaor(img='/static/imgs/logos/minotaor.png',
           title="Minotaor",
