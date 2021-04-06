@@ -20,7 +20,6 @@ export default {
   computed: {
     emailHref: function () {
       return ('mailto:egf-software@ed.ac.uk?' +
-              '&cc=valentin.zulkower@ed.ac.uk' +
               '&body=Hello EGF team !' +
               '&subject=' + this.emailSubject)
     },

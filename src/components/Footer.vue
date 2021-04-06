@@ -4,8 +4,8 @@ footer
   p.center
     img(src='/static/imgs/logos/egf-codon-horizontal.png' width=190)
     br
-    | © Edinburgh Genome Foundry, 2018 <br/>
-    | The EGF is supported by the Research Councils UK and University of Edinburgh
+    | Copyright © 2021 Edinburgh Genome Foundry <br/>
+    | The EGF is supported by the Research Councils UK and the University of Edinburgh
 </template>
 
 <style scoped>

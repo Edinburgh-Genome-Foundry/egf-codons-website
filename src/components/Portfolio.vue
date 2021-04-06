@@ -13,7 +13,7 @@ div
     is an academic facility running a highly automated robotic setup for DNA
     assembly automation. The software team develops computational libraries
     and web applications for DNA design and assembly, Lab Automation, and more.
-    Most of our software is open-source and released
+    Most of our software is free and open-source, and is released
     <a target='_blank' href='https://github.com/Edinburgh-Genome-Foundry'>on Github</a>.
 
   //- .alert
@@ -33,7 +33,7 @@ div
     //-   We are always happy to hear about software developers with a passion for
     //-   synthetic biology or lab automation. If you are interested in developing
     //-   nice, reusable software at a pioneering DNA facility,
-    //-   #[a(href='mailto:egf-software@ed.ac.uk?cc=hille.tekotte@ed.ac.uk, valentin.zulkower@ed.ac.uk&body=Hello EGF team!&subject=I want to join!') get in touch !]
+    //-   #[a(href='mailto:egf-software@ed.ac.uk&body=Hello EGF team!&subject=I want to join!') get in touch !]
     
 
   .header-links
@@ -83,7 +83,9 @@ div
           title="DNA Features Viewer",
           subtitle="Display DNA features from Genbank etc.",
           :githubStars="{repo: 'DnaFeaturesViewer'}",
-          source='https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer')
+          source='https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer',
+          docs='https://edinburgh-genome-foundry.github.io/DnaFeaturesViewer/',
+          demo='https://cuba.genomefoundry.org/plot-sequence-features')
     div(slot='summary').
       Customizable library to produce plots of sequence annotations (e.g. from
       Genbank). Easily customizable to highlight or hide certain features, it
@@ -122,7 +124,7 @@ div
           demo='https://cuba.genomefoundry.org/convert_sequence_files')
     div(slot='summary').
       Python library to parse the most common sequence annotation format: the
-      colorful Microsoft Word document.
+      colourful Microsoft Word document.
 
   project(img='/static/imgs/logos/dab.png',
           title="DAB",
@@ -139,10 +141,11 @@ div
           title="Genedom",
           :githubStars="{repo: 'genedom'}",
           demo='https://cuba.genomefoundry.org/domesticate_part_batches'
+          docs='https://edinburgh-genome-foundry.github.io/genedom',
           source='https://github.com/Edinburgh-Genome-Foundry/genedom',
-          subtitle="Automated parts domestication")
+          subtitle="Automated part domestication")
     div(slot='summary').
-      Genedom (in development) provides sequence optimizers for different
+      Genedom provides sequence optimizers for different
       assembly standards, routines for batch domestication and PDF reports
       for final verification and traceability.
 
@@ -162,9 +165,9 @@ div
           subtitle="Visual identifiers for DNA sequences")
     div(slot='summary').
       Sequenticon provides #[a(href="https://en.wikipedia.org/wiki/Identicon") identicons]
-      for DNA sequences, to quickly check accross project reports whether two mentionned
+      for DNA sequences, to quickly check across project reports whether two mentioned
       genetic parts have exactly the same sequence.
-  
+
   project(img='/static/imgs/logos/zymp.png',
           title="Zymp",
           :githubStars="{repo: 'zymp'}",
@@ -172,7 +175,7 @@ div
           source='https://github.com/Edinburgh-Genome-Foundry/zymp',
           subtitle="Restriction array designer")
     div(slot='summary').
-      Zymp is a small python utility to help design compact sequences packed
+      Zymp is a small Python utility to help design compact sequences packed
       with many restriction enzyme recognition sites. Originally written for
       creating "universal" controls for restriction digests.
 
@@ -192,7 +195,7 @@ div
       Python library to simulate restriction-based assembly operations
       (Golden Gate, BASIC). Supports simple and combinatorial assemblies, and
       conserves annotations in the final sequence. Also enables the autoselection
-      of parts connectors.
+      of part connectors.
 
   project(title="DNA Weaver",
           subtitle="A route planner for DNA assembly",
@@ -207,7 +210,7 @@ div
       such as commercial providers or constructs. Most awesome library on this page.
 
   project(title="BandWitch",
-          subtitle="Restriction digests assistant",
+          subtitle="Restriction digest assistant",
           img='/static/imgs/logos/bandwitch.png',
           source='https://github.com/Edinburgh-Genome-Foundry/BandWitch',
           docs='https://edinburgh-genome-foundry.github.io/BandWitch/',
@@ -216,8 +219,8 @@ div
     div(slot='summary').
       Python library to automatically select the best enzymes to either validate
       or identify a batch of genetic assemblies. Also provides report generation
-      for the validation or identification of assemblies from fragment analyzis
-      data
+      for the validation or identification of assemblies from fragment analysis
+      data.
 
   project(img='/static/imgs/logos/plateo.png',
           title="Plateo",
@@ -229,7 +232,7 @@ div
       Plateo is a Python library to implements parsers and file generators to
       interface with a biolab automation machines. Read microplate
       information (including experimental data) from many file formats, write
-      reports, generate and simulate picklists, etc.
+      reports, generate and simulate picklists etc.
 
   project(img='/static/imgs/logos/primavera.png',
           title="Primavera",
@@ -240,27 +243,30 @@ div
           demo='https://cuba.genomefoundry.org/select_primers')
     div(slot='summary').
       Python library for primer selection and data analysis for assembly
-      verification. Primavera can suggest an optimal set of primers to]
+      verification. Primavera can suggest an optimal set of primers to
       sequence-verify a multi-part construct at all junctions. It can
       also consolidate a batch of sequencing reads into a per-construct report.
 
   project(img='/static/imgs/logos/geneblocks.png',
-          title="Geneblocks",
+          title="GeneBlocks",
           :githubStars="{repo: 'geneblocks'}",
-          subtitle="Human-friendly DNA sequences comparator"
+          subtitle="Human-friendly DNA sequence comparator"
           demo='https://cuba.genomefoundry.org/find-common-blocks'
+          docs='https://edinburgh-genome-foundry.github.io/Geneblocks/'
           source='https://github.com/Edinburgh-Genome-Foundry/Geneblocks')
     div(slot='summary').
-      Python library and web apps for comparing sequences, e.g. by locating common
-      segments between a set of sequences, transfering annotations between identical
-      regions, or highlighting differences between 2 sequences. Used to factorize
-      BLAST searches, optimize cloning strategies, transfer annotations
-      from parts to constructs, compare sequence versions, etc.
+      Python library and two web apps for comparing sequences; by 
+      <a target='_blank' href='https://cuba.genomefoundry.org/find-common-blocks'>locating common segments</a>
+      between a set of sequences, transferring annotations between identical
+      regions, or 
+      <a target='_blank' href='https://cuba.genomefoundry.org/compare-two-sequences'>highlighting differences between two sequences</a>. Used to factorize BLAST searches, optimize cloning
+      strategies, transfer annotations from parts to constructs, compare sequence
+      versions, etc.
 
   project(img='/static/imgs/logos/bandwagon.png',
           title="BandWagon",
           :githubStars="{repo: 'bandwagon'}",
-          subtitle="Band patterns plotter and simulator",
+          subtitle="Band pattern plotter and simulator",
           source='https://github.com/Edinburgh-Genome-Foundry/Bandwagon',
           docs='https://edinburgh-genome-foundry.github.io/BandWagon/',
           demo='https://cuba.genomefoundry.org/predict-digestions')
@@ -312,8 +318,9 @@ div
   project(img='/static/imgs/logos/saboteurs.png',
           title="Saboteurs",
           :githubStars="{repo: 'Saboteurs'}",
-          subtitle="Indentify faulty genetic parts",
-          source='https://github.com/Edinburgh-Genome-Foundry/saboteurs')
+          subtitle="Identify faulty genetic parts",
+          source='https://github.com/Edinburgh-Genome-Foundry/saboteurs',
+          docs='https://edinburgh-genome-foundry.github.io/saboteurs')
     div(slot='summary').
       Saboteurs can use statistical and logical methods to detect genetic parts
       associated with assembly failure (and therefore possibly corrupted)
@@ -335,7 +342,7 @@ div
   
   project(img='/static/imgs/logos/blabel.png',
           title="Blabel",
-          subtitle="Printable labels generator",
+          subtitle="Printable label generator",
           source='https://github.com/Edinburgh-Genome-Foundry/blabel',
           docs='https://edinburgh-genome-foundry.github.io/blabel',
           :githubStars="{repo: 'blabel'}")
@@ -388,23 +395,23 @@ div
           source='https://github.com/Edinburgh-Genome-Foundry/CAB')
    div(slot='summary').
      CAB provides an easy way to deploy websites where users can fill
-     a form and get computational jobs done, and is used accross several EGF
-     websites (CUBA, SmartAss. EGF-DAB). Built with VueJS on the frontend, Python/Django
-     on the backend, and Docker for integration.
+     a form and get computational jobs done, and is used across several EGF
+     websites (CUBA, SmartAssembly, DAB). Built with VueJS on the frontend,
+     Python/Django on the backend, and Docker for integration.
 
   project(img='/static/imgs/logos/pdf_reports.png',
            title="PDF Reports",
-           subtitle="Easy and clean PDF reports generation",
+           subtitle="Easy and clean PDF report generation",
            source='https://github.com/Edinburgh-Genome-Foundry/pdf_reports',
            :githubStars="{repo: 'pdf_reports'}",
            docs='http://edinburgh-genome-foundry.github.io/pdf_reports/')
     div(slot='summary').
-      Python module to generate PDF reports using Pug templates, an the
+      Python module to generate PDF reports using Pug templates, and the
       Semantic UI CSS framework.
 
   project(img='/static/imgs/logos/bioprinter.png',
           title="BioPrinter",
-          subtitle="Print pictures using colored micro-organisms!",
+          subtitle="Print pictures using coloured micro-organisms!",
           docs='http://edinburgh-genome-foundry.github.io/bioprinter/',
           :githubStars="{repo: 'bioprinter'}",
           source='https://github.com/Edinburgh-Genome-Foundry/bioprinter')
@@ -415,6 +422,7 @@ div
   project(img='/static/imgs/logos/topkappy.png',
           title="Topkappy",
           subtitle="Pythonic bindings for the Kappa language",
+          docs='http://edinburgh-genome-foundry.github.io/topkappy/',
           :githubStars="{repo: 'topkappy'}",
           source='https://github.com/Edinburgh-Genome-Foundry/topkappy')
    div(slot='summary').
@@ -429,15 +437,15 @@ div
     div.other-repos(slot='summary')
       :markdown-it
 
-        [EGF software slideshows and other documents](https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents).
+        [EGF software slideshows and other documents](https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents)
 
         [Web slides about the EGF](https://github.com/Edinburgh-Genome-Foundry/egf-slides)
 
-        [Coder-friendly codon usage tables](https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables).
+        [Coder-friendly codon usage tables](https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables)
 
-        [Scripts to download the iGEM database](https://github.com/Edinburgh-Genome-Foundry/igem-registry-downloader).
+        [Scripts to download the iGEM database](https://github.com/Edinburgh-Genome-Foundry/igem-registry-downloader)
 
-        [Overhang annealing data for Python (from Potapov et al.)](https://github.com/Edinburgh-Genome-Foundry/tatapov).
+        [Overhang annealing data for Python (from *Potapov et al.*)](https://github.com/Edinburgh-Genome-Foundry/tatapov)
 
   .category(id='collaborations') Collaborations <hr>
 
