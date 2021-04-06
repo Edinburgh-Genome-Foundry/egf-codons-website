@@ -1,8 +1,14 @@
-# egf-codons
+# EGF Codons website
 
 Sources of the [EGF Codons website](https://edinburgh-genome-foundry.github.io/) (software portfolio of the Edinburgh Genome Foundry).
 
-## Build Setup
+
+## Setup
+
+Make a directory that contains the *[source](https://github.com/Edinburgh-Genome-Foundry/egf-codons-website)* and the *[build](https://github.com/Edinburgh-Genome-Foundry/Edinburgh-Genome-Foundry.github.io)* git repositories. (Alternatively, set up the `dist` directory of *source* as the build repo.)
+
+
+## Develop
 
 ``` bash
 # install dependencies
@@ -17,6 +23,7 @@ npm run build
 
 For detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+
 ## Deployment
 
-After build, into the ``dist folder``, commit the changes, push to the production repo, currently [Edinburgh-Genome-Foundry.github.io](https://github.com/Edinburgh-Genome-Foundry/Edinburgh-Genome-Foundry.github.io).
+The build command above updates the contents of the `dist` directory. Commit the changes of `dist` into the *build* repo, as described in the setup section above.
