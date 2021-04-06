@@ -375,6 +375,17 @@ div
      Tatapov finds sets of compatible overhangs for Golden Gate assembly, to extend an
      assembly standard or to decompose a sequence into compatible fragments.
 
+  project#minotaor(img='/static/imgs/logos/minotaor.png',
+          title="Minotaor",
+          subtitle="An amino acid sequence annotator",
+          source='https://github.com/Edinburgh-Genome-Foundry/Minotaor',
+          docs='https://edinburgh-genome-foundry.github.io/Minotaor',
+          :githubStars="{repo: 'minotaor'}")
+   div(slot='summary').
+     Minotaor is an amino acid sequence annotator for quickly identifying common protein
+     tags and linkers in an ORF. Additionally, it can flag peptide motifs that are known
+     to cause problems during translation.
+
 
   .category(id='other') Generic Software <hr>
 
